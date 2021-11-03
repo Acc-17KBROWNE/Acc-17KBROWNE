@@ -19,3 +19,17 @@ while (0 < max_number_guesses):
     else:
         print("You missed that one, try another!")
         max_number_guesses = max_number_guesses-1
+
+#program to see if a credit card is valid
+number=int(input("Please enter your credit card number, I promise I'm not sketchy:           "))
+while number>0:
+    odd=number%10
+    number=number//10
+    even_digit=number%10*2
+    even=number%10*2
+if even>9:
+    while even>0:
+        even_digit=even_digit+number%10
+        number=number//10
+else:
+    even=even+even_digit
