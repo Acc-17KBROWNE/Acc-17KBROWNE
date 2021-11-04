@@ -22,14 +22,22 @@ while (0 < max_number_guesses):
 
 #program to see if a credit card is valid
 number=int(input("Please enter your credit card number, I promise I'm not sketchy:           "))
+odd_list = list()
+even_list = list()
 while number>0:
     odd=number%10
     number=number//10
-    even_digit=number%10*2
-    even=number%10*2
+    odd_list.append(odd)
+    even_digit=(number%10)*2
+    even=(number%10)*2
+    even_list.append(even_digit)
 if even>9:
     while even>0:
         even_digit=even_digit+number%10
         number=number//10
 else:
     even=even+even_digit
+if sum(odd_list) + sum(even_list) %10==0:
+    print("Card is valid")
+else:
+    print("Card not valid")
