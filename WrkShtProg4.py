@@ -22,9 +22,9 @@ for number in range(1,11):
 time.sleep(1)
 #print pattern based on user input
 numbers=int(input("Give me a number please: "))
-for number0 in range(1,numbers+1):
-    for j in range(1,numbers+1):
-        print("*" and "")
+for number0 in range(numbers+1):
+    for j in range(number0):
+        print("*", end=" ")
     print(" ")
 
 time.sleep(1)
