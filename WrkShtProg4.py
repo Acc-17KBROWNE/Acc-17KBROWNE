@@ -24,7 +24,7 @@ time.sleep(1)
 numbers=int(input("Give me a number please: "))
 for number0 in range(1,numbers+1):
     for j in range(1,numbers+1):
-        print("*")
+        print("*" and "")
     print(" ")
 
 time.sleep(1)
