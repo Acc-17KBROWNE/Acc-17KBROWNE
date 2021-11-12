@@ -16,3 +16,5 @@ print(finalnum)
 
 sentence=str(input("Write a sentence or i take yor liver: "))
 print(sentence.replace(" ","-"))
+
+vowelsentence=str(input("Write NOW :"))
