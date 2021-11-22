@@ -41,7 +41,15 @@ list1.sort()
 print(list1)
 
 time.sleep(1)
-
+print("""1. Append an element
+2. Insert an element
+3. Append a list to the given list
+4. Modify an existing element
+5. Delete an existing element from its position
+6. Delete an existing element with a given value
+7. Sort the list in the ascending order
+8. Sort the list in descending order
+9. Display the list.""")
 list2=["a", "b", "c", "d"]
 option=int(input("Enter a number from 1 to 9: "))
 while option != 0:
