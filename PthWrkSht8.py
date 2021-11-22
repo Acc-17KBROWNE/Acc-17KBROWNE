@@ -54,20 +54,20 @@ list2=["a", "b", "c", "d"]
 option=int(input("Enter a number from 1 to 9: "))
 while option != 0:
     if option == 1:
-        print("You have picked option 1:")
+        print("Option 1:")
         add=str(input("Enter an element to be appended to the list: "))           
         list2.append(add)
         print("The new list is ",list2)
 
     elif option ==2:
-        print("You have picked option 2:")
+        print("Option 2:")
         enter=int(input("Insert an element to replace another element: "))
         replace=int(input("What do you want to replace: "))
         list2.insert(enter,replace)
         print(list2)
     
     elif option ==3:
-        print("You have picked option 3:")
+        print("Option 3:")
         listo1=str(input("Enter a value: "))
         listo2=str(input("Enter another value: "))
         listo3=str(input("Enter another nother value: "))
@@ -77,34 +77,35 @@ while option != 0:
         print(list2)
 
     elif option ==4:
-        print("You have picked option 4")
+        print("Option 4")
         user_modify=int(input("What element would you want to modify: "))
         other_modify=str(input("What do you want to modify it to: "))
         list2[user_modify]=other_modify
         print(list2)
 
     elif option ==5:
-        print("You have picked option 5")
+        print("Option 5")
         list2.remove("d")
         print("The new list is:",list2)
 
     elif option ==6:
-        print("You have picked option 6")
+        print("Option 6")
         user_remove=str(input("Enter a element to remove: "))
         list2.remove(user_remove)
         print("The new list is: ",list2)
 
     elif option ==7:
-        print("You have picked option 7")
+        print("Option 7")
         list2.sort()
         print(list2)
 
     elif option ==8:
-        print("You have picked option 8")
+        print("Option 8")
         list2.sort(reverse=True)
         print(list2)
 
     elif option ==9:
+        print("Option 9;")
         print("This is your current list",list2)
     
     else:
