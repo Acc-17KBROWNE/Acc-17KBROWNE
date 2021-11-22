@@ -41,6 +41,8 @@ list1.sort()
 print(list1)
 
 time.sleep(1)
+list2=["a", "b", "c", "d"]
+print(list2)
 print("""1. Append an element
 2. Insert an element
 3. Append a list to the given list
@@ -50,8 +52,8 @@ print("""1. Append an element
 7. Sort the list in the ascending order
 8. Sort the list in descending order
 9. Display the list.""")
-list2=["a", "b", "c", "d"]
 option=int(input("Enter a number from 1 to 9: "))
+
 while option != 0:
     if option == 1:
         print("Option 1:")
@@ -62,7 +64,7 @@ while option != 0:
     elif option ==2:
         print("Option 2:")
         enter=int(input("Insert an element to replace another element: "))
-        replace=int(input("What do you want to replace: "))
+        replace=int(input("What do you want to replace? "))
         list2.insert(enter,replace)
         print(list2)
     
