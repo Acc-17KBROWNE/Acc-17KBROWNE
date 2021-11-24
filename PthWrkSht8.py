@@ -113,10 +113,10 @@ while option != 0:
     else:
         print("ENTER A VALID NOMBRE BOZO")
 
-    option2=int(input("If you wish to end enter 0, otherwise enter 1:"))
+    option2=int(input("If you wish to end enter 0, otherwise enter 1. If you wish to try that option again, enter any other number:"))
     if option2 ==0:
         break
-    else:
+    elif option2 ==1:
         option=int(input("""1. Append an element
 2. Insert an element
 3. Append a list to the given list
@@ -127,3 +127,5 @@ while option != 0:
 8. Sort the list in descending order
 9. Display the list.
 Enter a number from 1 to 9: """))
+    else:
+        option = option
