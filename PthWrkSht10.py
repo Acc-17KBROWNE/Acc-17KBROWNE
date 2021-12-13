@@ -15,11 +15,15 @@ multi2num()
 
 def reversed():
     string1=str(input("Give me a string: "))
-    list1=[]
-    for ch in string1:
-        list1.append(ch)
-    list1.reverse()
-    for i in range(list1):
-        if i != " ":
-            print(list1(i))
+    string1length=len(string1)
+    reversedstring=string1[string1length::-1]
+    print(reversedstring)
 reversed()
+
+def evennumber():
+    list1=[]
+    list2=[]
+    things=int(input("How many numbers would u like to add to the list? "))
+        
+    print(list2)
+evennumber()
