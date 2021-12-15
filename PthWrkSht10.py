@@ -24,6 +24,11 @@ def evennumber():
     list1=[]
     list2=[]
     things=int(input("How many numbers would u like to add to the list? "))
-        
+    for i in range(things):
+        num=int(input("Enter number to list: "))
+        list1.append(num)
+    for i in range(len(list1)):
+        if (list1[i])%2==0:
+            list2.append(list1[i])
     print(list2)
 evennumber()
